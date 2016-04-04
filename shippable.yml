@@ -6,12 +6,20 @@ node_js:
   - 0.12
   - 0.10.25
   - 5
+  
+env:
+  - secure: p4NxgClDxV20e5jtl8PpkAs+Wkz2HG4bw052/87IqBQRZG0Gq7Gl3D/ryCn2sVnDkTXp5nyytULdL4xywcd10665tH85DREp0maTHilneJyp63j09Yi0fUJDDJZ2FdtXFqkbSPEU3c+q8ojDP55RU52yXWBuJVnYWICwK78PH9PIcKsy7ijX3zxFomrlnGbDJJfkfSZmWdWscbL7omvBRK9IUU904P1tA1k38KFEzZ2O5DEDYFp7e+e9C8HqC2MoCTbWQkb0K/DxYfUTGMwE3h7HnfkFrU0nz062Dd2j3r6qOtB3YSaSDpCFxt6F5FdwbUeM9Ys8hZXJCfFhzM4nSg==
+  #FOO=TEST
+  - secure: TpzLr6Bjs77ath8GPBOXVg/UNDsXxpHUpRMriHiloz70TYl1tR93zRrCocnovDniJ93uDovlp8svsMKJyopp7og+hYx/DpPUbd8TTdNnz40Ice1xRSV3P4Tj4hjx1Qo6GGYN8VO0e1jW8yreqlNuAx/TdliD3mNSNNNgQQwqJ6GfykmnUJffpE07bk4yX1BIPZw0qK/If/ufy5B/+9mdxhk6o8kXdvXn+GZ+bdhV6nMGijLI4OVU3xFqE0hiVRI5hE4CXveXipazksFajxOnWVJ3EW5adwnjszkBMriNIOZDb/MOXxVCKZcQOaheSEBBRuxC0zQ3Fh1a7dPUgv0SBA==
+  #TEST=BOO
 
 build:
 
   ci:
     - ps -eax
     - ls -al
+    - echo "$FOO"
+    - echo "$TEST"
     #PR
     
 integrations:
